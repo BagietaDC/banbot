@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 # Połączenie z MongoDB
 client = MongoClient("mongodb+srv://poznanred:EMXtONx2uz8Hh2BO@klakierzyc.uyah9.mongodb.net/?retryWrites=true&w=majority&appName=klakierzyc")
-db = client['mydatabase']  # Nazwa bazy danych
+db = client['roblox_ban_system']  # Nazwa bazy danych
 bans_collection = db['bans']  # Nazwa kolekcji banów
 
 @app.route('/bans', methods=['GET'])
